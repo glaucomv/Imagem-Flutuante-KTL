@@ -38,9 +38,6 @@ class FloatingImageService : Service() {
         //layoutParams.gravity = Gravity.TOP | Gravity.START;
         //layoutParams.x = 210;  // Posição X da margem esquerda
         layoutParams.y = 115 // Posição Y do topo
-        floatingImage!!.setOnClickListener {
-            // Lógica de clique aqui
-        }
         floatingImage!!.setOnTouchListener(OnTouchListener { v, event ->
             when (event.action) {
                 MotionEvent.ACTION_DOWN -> {
